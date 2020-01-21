@@ -9,7 +9,6 @@ Comments on every new submission that is made to a chosen subreddit.
 -   Install requirements `pip install -r requirements.txt`
 -   Create Reddit (script) app at <https://www.reddit.com/prefs/apps/> and get keys
 -   Edit conf.ini with your details
--   Create posts as .md files in the `/posts` directory
 -   Run it `python run.py`
 
 ### Settings Info
