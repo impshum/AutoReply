@@ -21,3 +21,7 @@ Comments on every new submission that is made to a chosen subreddit.
 
 -   If you're not using Unix you won't see the colours in the terminal (command prompt). Follow [THIS](https://recycledrobot.co.uk/words/?print-python-colours) tutorial to get them working.
 -   I will not be held responsible for any bad things that might happen to you or your Reddit account whilst using this bot. Follow Reddiquette and stay safe.
+
+### Tip
+
+BTC - 1AYSiE7mhR9XshtS4mU2rRoAGxN8wSo4tK
