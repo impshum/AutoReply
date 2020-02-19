@@ -57,7 +57,7 @@ def process_text(body):
 
 def main():
     if args.submissions:
-        for submission in reddit.subreddit(target_subreddit).stream.submissions(skip_existing=False):
+        for submission in reddit.subreddit(target_subreddit).stream.submissions(skip_existing=True):
             body = submission.title.lower()
             id = submission.id
             if process_id(id):
@@ -66,7 +66,7 @@ def main():
                         submission.reply(reply_text)
                     print(f'{C.G}{body}{C.W}')
     elif args.comments:
-        for comment in reddit.subreddit(target_subreddit).stream.comments(skip_existing=False):
+        for comment in reddit.subreddit(target_subreddit).stream.comments(skip_existing=True):
             body = comment.body.lower()
             id = comment.id
             if process_id(id):
