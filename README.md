@@ -1,8 +1,6 @@
-## AUTOREPLY
+## AutoReply
 
-Comments on every new submission that is made to a chosen subreddit.
-
-![](ss.jpg)
+Comments on every new submission or comment on a chosen subreddit.
 
 ### Instructions
 
@@ -14,9 +12,22 @@ Comments on every new submission that is made to a chosen subreddit.
 ### Settings Info
 
 -   `target_subreddit` - Bot account must be mod
+-   `target_keywords` - Separated by commas
 -   `reply_text` - Text to reply with
--   `test_mode` - Run the script without posting
 
+### Help
+
+    usage: run.py [-h] [-t] [-s] [-c] [-d]
+
+    AutoReply v2 (by /u/impshum)
+
+    optional arguments:
+      -h, --help         show this help message and exit
+      -t, --test         test mode
+      -s, --submissions  reply to submissions
+      -c, --comments     reply to comments
+      -d, --delete       delete saved ids
+M
 ### Notes
 
 -   If you're not using Unix you won't see the colours in the terminal (command prompt). Follow [THIS](https://recycledrobot.co.uk/words/?print-python-colours) tutorial to get them working.
