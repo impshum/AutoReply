@@ -1,6 +1,6 @@
 ## AutoReply
 
-Comments on every new submission or comment containing chosen keywords on a chosen subreddit .
+Comments on every new submission or comment containing chosen keywords on a chosen subreddit. Saves all post ID's to a txt file if you need to delete all posts and start again.
 
 ### Instructions
 
