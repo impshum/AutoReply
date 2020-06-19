@@ -1,6 +1,7 @@
 import praw
 import configparser
 import argparse
+import random
 
 
 parser = argparse.ArgumentParser(
@@ -25,7 +26,8 @@ config.read('conf.ini')
 target_subreddit = config['SETTINGS']['target_subreddit']
 target_keywords = config['SETTINGS']['target_keywords']
 target_keywords = [x.strip(' ') for x in target_keywords.split(',')]
-reply_text = config['SETTINGS']['reply_text']
+reply_texts = config['SETTINGS']['reply_text']
+reply_texts = [x.strip(' ') for x in reply_texts.split(',')]
 
 reddit = praw.Reddit(
     username=config['REDDIT']['reddit_user'],
@@ -63,7 +65,7 @@ def main():
             if process_id(id):
                 if process_text(body):
                     if not test_mode:
-                        submission.reply(reply_text)
+                        submission.reply(random.choice(reply_texts))
                     print(f'{C.G}{body}{C.W}')
     elif args.comments:
         for comment in reddit.subreddit(target_subreddit).stream.comments(skip_existing=True):
@@ -72,7 +74,7 @@ def main():
             if process_id(id):
                 if process_text(body):
                     if not test_mode:
-                        comment.reply(reply_text)
+                        comment.reply(random.choice(reply_texts))
                     print(f'{C.G}{body}{C.W}')
 
     elif args.delete:
