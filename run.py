@@ -5,7 +5,7 @@ import random
 
 
 parser = argparse.ArgumentParser(
-    description='AutoReply v2 (by /u/impshum)')
+    description='AutoReply v2 (by u/impshum)')
 parser.add_argument(
     '-t', '--test', help='test mode', action='store_true')
 parser.add_argument(
@@ -26,7 +26,7 @@ config.read('conf.ini')
 target_subreddit = config['SETTINGS']['target_subreddit']
 target_keywords = config['SETTINGS']['target_keywords']
 target_keywords = [x.strip(' ') for x in target_keywords.split(',')]
-reply_texts = config['SETTINGS']['reply_text']
+reply_texts = config['SETTINGS']['reply_texts']
 reply_texts = [x.strip(' ') for x in reply_texts.split(',')]
 
 reddit = praw.Reddit(

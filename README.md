@@ -19,7 +19,7 @@ Comments on every new submission or comment containing chosen keywords on a chos
 
     usage: run.py [-h] [-t] [-s] [-c] [-d]
 
-    AutoReply v2 (by /u/impshum)
+    AutoReply v2 (by u/impshum)
 
     optional arguments:
       -h, --help         show this help message and exit
