@@ -12,8 +12,8 @@ Comments on every new submission or comment on a chosen subreddit.
 ### Settings Info
 
 -   `target_subreddit` - Bot account must be mod
--   `target_keywords` - Separated by commas
--   `reply_text` - Text to reply with
+-   `target_keywords` - Kewwords to search for (separated by commas)
+-   `reply_texts` - Texts to reply with (separated by commas)
 
 ### Help
 
@@ -27,7 +27,7 @@ Comments on every new submission or comment on a chosen subreddit.
       -s, --submissions  reply to submissions
       -c, --comments     reply to comments
       -d, --delete       delete saved ids
-M
+
 ### Notes
 
 -   If you're not using Unix you won't see the colours in the terminal (command prompt). Follow [THIS](https://recycledrobot.co.uk/words/?print-python-colours) tutorial to get them working.
