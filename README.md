@@ -1,6 +1,6 @@
 ## AutoReply
 
-Comments on every new submission or comment on a chosen subreddit.
+Comments on every new submission or comment containing chosen keywords on a chosen subreddit .
 
 ### Instructions
 
